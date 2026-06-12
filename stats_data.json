@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "updated": "2026-06-12",
-  "stats": {
+  "hitting": {
     "woba": {
       "leader": {
         "player": "Yordan Alvarez",
@@ -111,6 +111,118 @@
         "value": 109.0
       },
       "average": 166.992
+    }
+  },
+  "pitching": {
+    "woba": {
+      "leader": {
+        "player": "Ben Brown",
+        "value": 0.208
+      },
+      "coldest": {
+        "player": "Michael Lorenzen",
+        "value": 0.413
+      },
+      "average": 0.315
+    },
+    "xwoba": {
+      "leader": {
+        "player": "Jacob Misiorowski",
+        "value": 0.238
+      },
+      "coldest": {
+        "player": "Tomoyuki Sugano",
+        "value": 0.411
+      },
+      "average": 0.322
+    },
+    "xba": {
+      "leader": {
+        "player": "Jacob Misiorowski",
+        "value": 0.182
+      },
+      "coldest": {
+        "player": "Tomoyuki Sugano",
+        "value": 0.315
+      },
+      "average": 0.249
+    },
+    "xslg": {
+      "leader": {
+        "player": "Jacob Misiorowski",
+        "value": 0.254
+      },
+      "coldest": {
+        "player": "Tomoyuki Sugano",
+        "value": 0.582
+      },
+      "average": 0.411
+    },
+    "barrel": {
+      "leader": {
+        "player": "Tyler Rogers",
+        "value": 0.0
+      },
+      "coldest": {
+        "player": "Cole Ragans",
+        "value": 15.7
+      },
+      "average": 7.836
+    },
+    "hardhit": {
+      "leader": {
+        "player": "Tyler Rogers",
+        "value": 22.1
+      },
+      "coldest": {
+        "player": "Chase Dollander",
+        "value": 52.1
+      },
+      "average": 39.125
+    },
+    "avgev": {
+      "leader": {
+        "player": "Tyler Rogers",
+        "value": 83.4
+      },
+      "coldest": {
+        "player": "Gus Varland",
+        "value": 93.4
+      },
+      "average": 88.907
+    },
+    "maxev": {
+      "leader": {
+        "player": "Grant Taylor",
+        "value": 105.7
+      },
+      "coldest": {
+        "player": "Foster Griffin",
+        "value": 119.0
+      },
+      "average": 111.982
+    },
+    "sweetspot": {
+      "leader": {
+        "player": "David Bednar",
+        "value": 19.5
+      },
+      "coldest": {
+        "player": "Jake Woodford",
+        "value": 47.1
+      },
+      "average": 33.442
+    },
+    "avgdist": {
+      "leader": {
+        "player": "Tyler Rogers",
+        "value": 88.0
+      },
+      "coldest": {
+        "player": "Yoendrys G\u00f3mez",
+        "value": 208.0
+      },
+      "average": 163.904
     }
   }
 }

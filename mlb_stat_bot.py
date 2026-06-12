@@ -1,14 +1,15 @@
 """
-Stat of the Day -- daily data bot (v5)
+Stat of the Day -- daily data bot (v6)
 =======================================
 
-New in v5:
-  - Each stat now also includes a "average" value (league average among
-    qualified players), used for the small comparison chart.
-  - The bot now also saves a DATED snapshot to history/YYYY-MM-DD.json
-    every day (without overwriting previous days), plus updates
-    history/index.json with the list of available dates. This builds
-    an archive over time for "on this day" comparisons.
+New in v6:
+  - Adds a full PITCHING section (10 stats measuring what pitchers
+    ALLOW -- lower is better), using the pitcher-side equivalents of
+    the same Baseball Savant data sources already used for hitting.
+  - Output structure is now nested: {"hitting": {...}, "pitching": {...}}
+    instead of one flat "stats" dict.
+  - Still writes stats_data.json (latest) AND history/YYYY-MM-DD.json
+    (dated archive) + history/index.json.
 
 SETUP:
     pip install pybaseball pandas
@@ -19,12 +20,19 @@ import os
 import json
 import datetime
 import traceback
-from pybaseball import statcast_batter_expected_stats, statcast_batter_exitvelo_barrels
+from pybaseball import (
+    statcast_batter_expected_stats,
+    statcast_batter_exitvelo_barrels,
+    statcast_pitcher_expected_stats,
+    statcast_pitcher_exitvelo_barrels,
+)
 
 YEAR = datetime.date.today().year
 
-MIN_PA = 200
-MIN_BBE = 100
+MIN_PA_BAT = 200
+MIN_BBE_BAT = 100
+MIN_PA_PIT = 150
+MIN_BBE_PIT = 75
 
 
 def get_name(row):
@@ -49,75 +57,123 @@ def leader_low_avg(df, value_col, lower_is_better=False):
     )
 
 
+def process_columns(df, mapping, lower_is_better=False):
+    """mapping: list of (savant_column_name, output_key)"""
+    out = {}
+    for col, key in mapping:
+        if col in df.columns and not df.empty:
+            leader, coldest, avg = leader_low_avg(df, col, lower_is_better=lower_is_better)
+            out[key] = {"leader": leader, "coldest": coldest, "average": avg}
+            print(f"  -> {key}: leader={leader}, coldest={coldest}, avg={avg}")
+        else:
+            print(f"  [skip] column '{col}' not available")
+    return out
+
+
 def main():
-    results = {}
+    output = {
+        "season": YEAR,
+        "updated": datetime.date.today().isoformat(),
+        "hitting": {},
+        "pitching": {},
+    }
 
+    # ---------------- HITTING ----------------
     try:
-        print(f"Fetching {YEAR} expected stats from Baseball Savant...")
+        print(f"[Hitting] Fetching {YEAR} expected stats...")
         exp_df = statcast_batter_expected_stats(YEAR)
-        print(f"  Got {len(exp_df)} players before filtering")
-
+        print(f"  Got {len(exp_df)} players")
         if "pa" in exp_df.columns:
-            exp_df = exp_df[exp_df["pa"] >= MIN_PA]
-            print(f"  {len(exp_df)} players with at least {MIN_PA} PA")
-
-        for col, key in [("woba", "woba"), ("est_woba", "xwoba"), ("est_ba", "xba"), ("est_slg", "xslg")]:
-            if col in exp_df.columns and not exp_df.empty:
-                leader, coldest, avg = leader_low_avg(exp_df, col)
-                results[key] = {"leader": leader, "coldest": coldest, "average": avg}
-                print(f"  -> {key}: leader={leader}, coldest={coldest}, avg={avg}")
-            else:
-                print(f"  [skip] column '{col}' not available")
+            exp_df = exp_df[exp_df["pa"] >= MIN_PA_BAT]
+            print(f"  {len(exp_df)} with >= {MIN_PA_BAT} PA")
+        output["hitting"].update(process_columns(
+            exp_df,
+            [("woba", "woba"), ("est_woba", "xwoba"), ("est_ba", "xba"), ("est_slg", "xslg")],
+            lower_is_better=False,
+        ))
     except Exception:
-        print("  [error] expected stats fetch failed:")
+        print("  [error] hitting expected stats failed:")
         traceback.print_exc()
 
     try:
-        print(f"\nFetching {YEAR} exit velocity / barrel data from Baseball Savant...")
+        print(f"\n[Hitting] Fetching {YEAR} exit velocity / barrels...")
         ev_df = statcast_batter_exitvelo_barrels(YEAR)
-        print(f"  Got {len(ev_df)} players before filtering")
-
+        print(f"  Got {len(ev_df)} players")
         if "attempts" in ev_df.columns:
-            ev_df = ev_df[ev_df["attempts"] >= MIN_BBE]
-            print(f"  {len(ev_df)} players with at least {MIN_BBE} batted ball events")
-
-        for col, key in [
-            ("brl_percent", "barrel"),
-            ("ev95percent", "hardhit"),
-            ("avg_hit_speed", "avgev"),
-            ("max_hit_speed", "maxev"),
-            ("anglesweetspotpercent", "sweetspot"),
-            ("avg_distance", "avgdist"),
-        ]:
-            if col in ev_df.columns and not ev_df.empty:
-                leader, coldest, avg = leader_low_avg(ev_df, col)
-                results[key] = {"leader": leader, "coldest": coldest, "average": avg}
-                print(f"  -> {key}: leader={leader}, coldest={coldest}, avg={avg}")
-            else:
-                print(f"  [skip] column '{col}' not available")
+            ev_df = ev_df[ev_df["attempts"] >= MIN_BBE_BAT]
+            print(f"  {len(ev_df)} with >= {MIN_BBE_BAT} BBE")
+        output["hitting"].update(process_columns(
+            ev_df,
+            [
+                ("brl_percent", "barrel"),
+                ("ev95percent", "hardhit"),
+                ("avg_hit_speed", "avgev"),
+                ("max_hit_speed", "maxev"),
+                ("anglesweetspotpercent", "sweetspot"),
+                ("avg_distance", "avgdist"),
+            ],
+            lower_is_better=False,
+        ))
     except Exception:
-        print("  [error] exit velo / barrels fetch failed:")
+        print("  [error] hitting exit velo / barrels failed:")
+        traceback.print_exc()
+
+    # ---------------- PITCHING (lower = better, since these are ALLOWED) ----------------
+    try:
+        print(f"\n[Pitching] Fetching {YEAR} expected stats allowed...")
+        pexp_df = statcast_pitcher_expected_stats(YEAR)
+        print(f"  Got {len(pexp_df)} pitchers")
+        print(f"  Columns: {list(pexp_df.columns)}")
+        pa_col = "pa" if "pa" in pexp_df.columns else ("bf" if "bf" in pexp_df.columns else None)
+        if pa_col:
+            pexp_df = pexp_df[pexp_df[pa_col] >= MIN_PA_PIT]
+            print(f"  {len(pexp_df)} with >= {MIN_PA_PIT} {pa_col}")
+        output["pitching"].update(process_columns(
+            pexp_df,
+            [("woba", "woba"), ("est_woba", "xwoba"), ("est_ba", "xba"), ("est_slg", "xslg")],
+            lower_is_better=True,
+        ))
+    except Exception:
+        print("  [error] pitching expected stats failed:")
+        traceback.print_exc()
+
+    try:
+        print(f"\n[Pitching] Fetching {YEAR} exit velocity / barrels allowed...")
+        pev_df = statcast_pitcher_exitvelo_barrels(YEAR)
+        print(f"  Got {len(pev_df)} pitchers")
+        print(f"  Columns: {list(pev_df.columns)}")
+        if "attempts" in pev_df.columns:
+            pev_df = pev_df[pev_df["attempts"] >= MIN_BBE_PIT]
+            print(f"  {len(pev_df)} with >= {MIN_BBE_PIT} BBE")
+        output["pitching"].update(process_columns(
+            pev_df,
+            [
+                ("brl_percent", "barrel"),
+                ("ev95percent", "hardhit"),
+                ("avg_hit_speed", "avgev"),
+                ("max_hit_speed", "maxev"),
+                ("anglesweetspotpercent", "sweetspot"),
+                ("avg_distance", "avgdist"),
+            ],
+            lower_is_better=True,
+        ))
+    except Exception:
+        print("  [error] pitching exit velo / barrels failed:")
         traceback.print_exc()
 
     today_str = datetime.date.today().isoformat()
-    output = {
-        "season": YEAR,
-        "updated": today_str,
-        "stats": results,
-    }
 
-    # Main "latest" file (overwritten daily)
     with open("stats_data.json", "w") as f:
         json.dump(output, f, indent=2)
-    print("\nWrote stats_data.json with keys:", list(results.keys()))
+    print("\nWrote stats_data.json")
+    print("  hitting keys:", list(output["hitting"].keys()))
+    print("  pitching keys:", list(output["pitching"].keys()))
 
-    # Dated archive snapshot (never overwritten)
     os.makedirs("history", exist_ok=True)
     with open(f"history/{today_str}.json", "w") as f:
         json.dump(output, f, indent=2)
     print(f"Wrote history/{today_str}.json")
 
-    # Update index of available history dates
     index_path = "history/index.json"
     if os.path.exists(index_path):
         with open(index_path) as f:
