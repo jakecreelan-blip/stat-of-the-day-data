@@ -1,16 +1,17 @@
 """
-Stat of the Day -- daily data bot (v3, Baseball Savant edition)
-================================================================
+Stat of the Day -- daily data bot (v4, 10 stats)
+=================================================
 
-Pulls advanced/Statcast stats from Baseball Savant via pybaseball:
-  - xwOBA  (expected weighted on-base average)
-  - Barrel% (rate of "perfectly struck" balls)
-  - Hard-Hit% (rate of balls hit 95+ mph)
+Pulls 10 advanced/Statcast hitting stats from Baseball Savant via
+pybaseball -- using the SAME two data sources as before, since both
+tables contain more useful columns than we were using:
 
-v3 change: filters by sample size OURSELVES after fetching the data,
-since Savant's built-in minPA/minBBE parameters weren't reliably
-filtering out small-sample outliers (e.g. a 0.78 "xwOBA" from a
-player with almost no plate appearances).
+From statcast_batter_expected_stats:
+  - wOBA, xwOBA, xBA, xSLG
+
+From statcast_batter_exitvelo_barrels:
+  - Barrel%, Hard-Hit%, Avg Exit Velocity, Max Exit Velocity,
+    Sweet-Spot%, Avg Distance
 
 SETUP:
     pip install pybaseball pandas
@@ -24,12 +25,11 @@ from pybaseball import statcast_batter_expected_stats, statcast_batter_exitvelo_
 
 YEAR = datetime.date.today().year
 
-MIN_PA = 200    # plate appearances, for xwOBA
-MIN_BBE = 100   # batted ball events, for barrel/hard-hit rate
+MIN_PA = 200    # plate appearances, for expected-stats table
+MIN_BBE = 100   # batted ball events, for exit velo / barrels table
 
 
 def get_name(row):
-    """Savant data often gives 'last_name, first_name' instead of a single Name column."""
     for col in ["player_name", "name", "Name"]:
         if col in row and isinstance(row[col], str):
             return row[col]
@@ -52,28 +52,28 @@ def leader_and_low(df, value_col, lower_is_better=False):
 def main():
     results = {}
 
-    # --- xwOBA ---
+    # --- Table 1: expected stats -> wOBA, xwOBA, xBA, xSLG ---
     try:
-        print(f"Fetching {YEAR} expected stats (xwOBA) from Baseball Savant...")
-        xwoba_df = statcast_batter_expected_stats(YEAR)
-        print(f"  Got {len(xwoba_df)} players before filtering")
+        print(f"Fetching {YEAR} expected stats from Baseball Savant...")
+        exp_df = statcast_batter_expected_stats(YEAR)
+        print(f"  Got {len(exp_df)} players before filtering")
 
-        if "pa" in xwoba_df.columns:
-            xwoba_df = xwoba_df[xwoba_df["pa"] >= MIN_PA]
-            print(f"  {len(xwoba_df)} players with at least {MIN_PA} PA")
+        if "pa" in exp_df.columns:
+            exp_df = exp_df[exp_df["pa"] >= MIN_PA]
+            print(f"  {len(exp_df)} players with at least {MIN_PA} PA")
 
-        xwoba_col = next((c for c in ["est_woba", "xwoba", "x_woba"] if c in xwoba_df.columns), None)
-        if xwoba_col and not xwoba_df.empty:
-            leader, coldest = leader_and_low(xwoba_df, xwoba_col, lower_is_better=False)
-            results["xwoba"] = {"leader": leader, "coldest": coldest}
-            print(f"  -> Leader: {leader}, Lowest: {coldest}")
-        else:
-            print("  [skip] no qualified rows or no xwOBA-like column found")
+        for col, key in [("woba", "woba"), ("est_woba", "xwoba"), ("est_ba", "xba"), ("est_slg", "xslg")]:
+            if col in exp_df.columns and not exp_df.empty:
+                leader, coldest = leader_and_low(exp_df, col)
+                results[key] = {"leader": leader, "coldest": coldest}
+                print(f"  -> {key}: leader={leader}, coldest={coldest}")
+            else:
+                print(f"  [skip] column '{col}' not available")
     except Exception:
-        print("  [error] xwOBA fetch failed:")
+        print("  [error] expected stats fetch failed:")
         traceback.print_exc()
 
-    # --- Barrel% and Hard-Hit% ---
+    # --- Table 2: exit velo / barrels -> Barrel%, Hard-Hit%, EV, max EV, sweet spot%, distance ---
     try:
         print(f"\nFetching {YEAR} exit velocity / barrel data from Baseball Savant...")
         ev_df = statcast_batter_exitvelo_barrels(YEAR)
@@ -83,22 +83,20 @@ def main():
             ev_df = ev_df[ev_df["attempts"] >= MIN_BBE]
             print(f"  {len(ev_df)} players with at least {MIN_BBE} batted ball events")
 
-        barrel_col = next((c for c in ["brl_percent", "barrel_batted_rate", "barrel%"] if c in ev_df.columns), None)
-        if barrel_col and not ev_df.empty:
-            leader, coldest = leader_and_low(ev_df, barrel_col, lower_is_better=False)
-            results["barrel"] = {"leader": leader, "coldest": coldest}
-            print(f"  -> Barrel% Leader: {leader}, Lowest: {coldest}")
-        else:
-            print("  [skip] no qualified rows or no Barrel%-like column found")
-
-        hardhit_col = next((c for c in ["ev95percent", "hard_hit_percent", "hardhit_percent"] if c in ev_df.columns), None)
-        if hardhit_col and not ev_df.empty:
-            leader, coldest = leader_and_low(ev_df, hardhit_col, lower_is_better=False)
-            results["hardhit"] = {"leader": leader, "coldest": coldest}
-            print(f"  -> Hard-Hit% Leader: {leader}, Lowest: {coldest}")
-        else:
-            print("  [skip] no qualified rows or no Hard-Hit%-like column found")
-
+        for col, key in [
+            ("brl_percent", "barrel"),
+            ("ev95percent", "hardhit"),
+            ("avg_hit_speed", "avgev"),
+            ("max_hit_speed", "maxev"),
+            ("anglesweetspotpercent", "sweetspot"),
+            ("avg_distance", "avgdist"),
+        ]:
+            if col in ev_df.columns and not ev_df.empty:
+                leader, coldest = leader_and_low(ev_df, col)
+                results[key] = {"leader": leader, "coldest": coldest}
+                print(f"  -> {key}: leader={leader}, coldest={coldest}")
+            else:
+                print(f"  [skip] column '{col}' not available")
     except Exception:
         print("  [error] exit velo / barrels fetch failed:")
         traceback.print_exc()

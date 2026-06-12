@@ -2,6 +2,16 @@
   "season": 2026,
   "updated": "2026-06-12",
   "stats": {
+    "woba": {
+      "leader": {
+        "player": "Yordan Alvarez",
+        "value": 0.447
+      },
+      "coldest": {
+        "player": "Nasim Nu\u00f1ez",
+        "value": 0.245
+      }
+    },
     "xwoba": {
       "leader": {
         "player": "Yordan Alvarez",
@@ -10,6 +20,26 @@
       "coldest": {
         "player": "Chandler Simpson",
         "value": 0.253
+      }
+    },
+    "xba": {
+      "leader": {
+        "player": "Yordan Alvarez",
+        "value": 0.346
+      },
+      "coldest": {
+        "player": "Cedric Mullins",
+        "value": 0.181
+      }
+    },
+    "xslg": {
+      "leader": {
+        "player": "Yordan Alvarez",
+        "value": 0.729
+      },
+      "coldest": {
+        "player": "Nasim Nu\u00f1ez",
+        "value": 0.267
       }
     },
     "barrel": {
@@ -30,6 +60,46 @@
       "coldest": {
         "player": "Steven Kwan",
         "value": 8.5
+      }
+    },
+    "avgev": {
+      "leader": {
+        "player": "Oneil Cruz",
+        "value": 96.0
+      },
+      "coldest": {
+        "player": "Steven Kwan",
+        "value": 83.0
+      }
+    },
+    "maxev": {
+      "leader": {
+        "player": "Oneil Cruz",
+        "value": 119.0
+      },
+      "coldest": {
+        "player": "Steven Kwan",
+        "value": 100.8
+      }
+    },
+    "sweetspot": {
+      "leader": {
+        "player": "Spencer Torkelson",
+        "value": 46.2
+      },
+      "coldest": {
+        "player": "Joey Ortiz",
+        "value": 21.9
+      }
+    },
+    "avgdist": {
+      "leader": {
+        "player": "Yordan Alvarez",
+        "value": 220.0
+      },
+      "coldest": {
+        "player": "Chandler Simpson",
+        "value": 109.0
       }
     }
   }
