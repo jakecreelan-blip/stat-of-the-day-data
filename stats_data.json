@@ -1,0 +1,36 @@
+{
+  "season": 2026,
+  "updated": "2026-06-12",
+  "stats": {
+    "xwoba": {
+      "leader": {
+        "player": "Yordan Alvarez",
+        "value": 0.489
+      },
+      "coldest": {
+        "player": "Chandler Simpson",
+        "value": 0.253
+      }
+    },
+    "barrel": {
+      "leader": {
+        "player": "James Wood",
+        "value": 25.3
+      },
+      "coldest": {
+        "player": "Nasim Nu\u00f1ez",
+        "value": 0.0
+      }
+    },
+    "hardhit": {
+      "leader": {
+        "player": "Oneil Cruz",
+        "value": 59.2
+      },
+      "coldest": {
+        "player": "Steven Kwan",
+        "value": 8.5
+      }
+    }
+  }
+}
