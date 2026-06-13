@@ -1,0 +1,228 @@
+{
+  "season": "2025-26",
+  "updated": "2026-06-13",
+  "offense": {
+    "pts": {
+      "leader": {
+        "player": "Luka Don\u010di\u0107",
+        "value": 33.5
+      },
+      "coldest": {
+        "player": "Lonzo Ball",
+        "value": 4.6
+      },
+      "average": 14.1301
+    },
+    "ts": {
+      "leader": {
+        "player": "Ryan Kalkbrenner",
+        "value": 0.762
+      },
+      "coldest": {
+        "player": "Lonzo Ball",
+        "value": 0.432
+      },
+      "average": 0.5824
+    },
+    "efg": {
+      "leader": {
+        "player": "Ryan Kalkbrenner",
+        "value": 0.753
+      },
+      "coldest": {
+        "player": "Elijah Harkless",
+        "value": 0.401
+      },
+      "average": 0.5477
+    },
+    "usg": {
+      "leader": {
+        "player": "Luka Don\u010di\u0107",
+        "value": 0.368
+      },
+      "coldest": {
+        "player": "Spencer Jones",
+        "value": 0.097
+      },
+      "average": 0.2026
+    },
+    "ast_pct": {
+      "leader": {
+        "player": "Nikola Joki\u0107",
+        "value": 0.458
+      },
+      "coldest": {
+        "player": "Rui Hachimura",
+        "value": 0.041
+      },
+      "average": 0.1676
+    },
+    "ast_to": {
+      "leader": {
+        "player": "Dean Wade",
+        "value": 5.5
+      },
+      "coldest": {
+        "player": "Deandre Ayton",
+        "value": 0.71
+      },
+      "average": 1.9821
+    },
+    "fg3_pct": {
+      "leader": {
+        "player": "Mark Williams",
+        "value": 1.0
+      },
+      "coldest": {
+        "player": "Steven Adams",
+        "value": 0.0
+      },
+      "average": 0.339
+    },
+    "ft_pct": {
+      "leader": {
+        "player": "Taurean Prince",
+        "value": 1.0
+      },
+      "coldest": {
+        "player": "Oso Ighodaro",
+        "value": 0.453
+      },
+      "average": 0.7836
+    },
+    "plus_minus": {
+      "leader": {
+        "player": "Shai Gilgeous-Alexander",
+        "value": 11.6
+      },
+      "coldest": {
+        "player": "Bub Carrington",
+        "value": -9.1
+      },
+      "average": 0.3131
+    },
+    "pie": {
+      "leader": {
+        "player": "Nikola Joki\u0107",
+        "value": 0.213
+      },
+      "coldest": {
+        "player": "Jahmai Mashack",
+        "value": 0.041
+      },
+      "average": 0.1036
+    }
+  },
+  "defense": {
+    "def_rating": {
+      "leader": {
+        "player": "Chet Holmgren",
+        "value": 102.3
+      },
+      "coldest": {
+        "player": "Cam Thomas",
+        "value": 123.8
+      },
+      "average": 113.7093
+    },
+    "dreb_pct": {
+      "leader": {
+        "player": "Victor Wembanyama",
+        "value": 0.285
+      },
+      "coldest": {
+        "player": "Gary Trent Jr.",
+        "value": 0.044
+      },
+      "average": 0.1283
+    },
+    "oreb_pct": {
+      "leader": {
+        "player": "Steven Adams",
+        "value": 0.189
+      },
+      "coldest": {
+        "player": "Zach LaVine",
+        "value": 0.006
+      },
+      "average": 0.0426
+    },
+    "reb_pct": {
+      "leader": {
+        "player": "Donovan Clingan",
+        "value": 0.199
+      },
+      "coldest": {
+        "player": "Gary Trent Jr.",
+        "value": 0.024
+      },
+      "average": 0.0856
+    },
+    "stl": {
+      "leader": {
+        "player": "Kevin Porter Jr.",
+        "value": 2.2
+      },
+      "coldest": {
+        "player": "Cam Thomas",
+        "value": 0.2
+      },
+      "average": 0.9371
+    },
+    "blk": {
+      "leader": {
+        "player": "Victor Wembanyama",
+        "value": 3.1
+      },
+      "coldest": {
+        "player": "Gary Trent Jr.",
+        "value": 0.0
+      },
+      "average": 0.5378
+    },
+    "net_rating": {
+      "leader": {
+        "player": "Victor Wembanyama",
+        "value": 17.0
+      },
+      "coldest": {
+        "player": "Drake Powell",
+        "value": -16.1
+      },
+      "average": 0.2344
+    },
+    "tov": {
+      "leader": {
+        "player": "Dean Wade",
+        "value": 0.3
+      },
+      "coldest": {
+        "player": "Luka Don\u010di\u0107",
+        "value": 4.0
+      },
+      "average": 1.6479
+    },
+    "pace": {
+      "leader": {
+        "player": "Ja Morant",
+        "value": 106.6
+      },
+      "coldest": {
+        "player": "Payton Pritchard",
+        "value": 95.81
+      },
+      "average": 101.5338
+    },
+    "pf": {
+      "leader": {
+        "player": "Cam Thomas",
+        "value": 1.0
+      },
+      "coldest": {
+        "player": "Dylan Cardwell",
+        "value": 3.7
+      },
+      "average": 2.1286
+    }
+  }
+}
