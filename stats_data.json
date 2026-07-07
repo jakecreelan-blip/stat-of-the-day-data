@@ -1,22 +1,22 @@
 {
   "season": 2026,
-  "updated": "2026-07-06",
+  "updated": "2026-07-07",
   "hitting": {
     "woba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.443
+        "value": 0.439
       },
       "coldest": {
         "player": "Austin Wells",
-        "value": 0.223
+        "value": 0.219
       },
       "average": 0.326
     },
     "xwoba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.477
+        "value": 0.474
       },
       "coldest": {
         "player": "Marcelo Mayer",
@@ -27,7 +27,7 @@
     "xba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.337
+        "value": 0.335
       },
       "coldest": {
         "player": "Rhys Hoskins",
@@ -38,35 +38,35 @@
     "xslg": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.718
+        "value": 0.712
       },
       "coldest": {
         "player": "Taylor Walls",
-        "value": 0.272
+        "value": 0.268
       },
       "average": 0.414
     },
     "barrel": {
       "leader": {
         "player": "James Wood",
-        "value": 22.6
+        "value": 22.8
       },
       "coldest": {
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.601
+      "average": 8.638
     },
     "hardhit": {
       "leader": {
         "player": "James Wood",
-        "value": 60.2
+        "value": 60.1
       },
       "coldest": {
         "player": "Steven Kwan",
         "value": 9.9
       },
-      "average": 40.435
+      "average": 40.519
     },
     "avgev": {
       "leader": {
@@ -77,7 +77,7 @@
         "player": "Steven Kwan",
         "value": 83.1
       },
-      "average": 89.197
+      "average": 89.205
     },
     "maxev": {
       "leader": {
@@ -88,7 +88,7 @@
         "player": "Chandler Simpson",
         "value": 100.1
       },
-      "average": 110.587
+      "average": 110.618
     },
     "sweetspot": {
       "leader": {
@@ -97,20 +97,20 @@
       },
       "coldest": {
         "player": "Nick Fortes",
-        "value": 21.6
+        "value": 21.3
       },
-      "average": 34.146
+      "average": 34.143
     },
     "avgdist": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 219.0
+        "value": 220.0
       },
       "coldest": {
         "player": "Chandler Simpson",
-        "value": 105.0
+        "value": 104.0
       },
-      "average": 168.079
+      "average": 168.269
     }
   },
   "pitching": {
@@ -120,7 +120,7 @@
         "value": 0.175
       },
       "coldest": {
-        "player": "Tanner Gordon",
+        "player": "Justin Lawrence",
         "value": 0.413
       },
       "average": 0.312
@@ -167,7 +167,7 @@
         "player": "Cole Ragans",
         "value": 15.7
       },
-      "average": 7.72
+      "average": 7.716
     },
     "hardhit": {
       "leader": {
@@ -182,7 +182,7 @@
     },
     "avgev": {
       "leader": {
-        "player": "Huascar Brazob\u00e1n",
+        "player": "Edgardo Henriquez",
         "value": 83.1
       },
       "coldest": {
@@ -200,7 +200,7 @@
         "player": "Foster Griffin",
         "value": 119.0
       },
-      "average": 112.044
+      "average": 112.039
     },
     "sweetspot": {
       "leader": {
@@ -211,7 +211,7 @@
         "player": "Jake Woodford",
         "value": 47.1
       },
-      "average": 33.366
+      "average": 33.329
     },
     "avgdist": {
       "leader": {
@@ -222,7 +222,7 @@
         "player": "Paul Sewald",
         "value": 225.0
       },
-      "average": 164.86
+      "average": 164.67
     }
   }
 }
