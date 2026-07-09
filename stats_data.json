@@ -1,22 +1,22 @@
 {
   "season": 2026,
-  "updated": "2026-07-08",
+  "updated": "2026-07-09",
   "hitting": {
     "woba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.434
+        "value": 0.429
       },
       "coldest": {
         "player": "Austin Wells",
-        "value": 0.219
+        "value": 0.216
       },
       "average": 0.326
     },
     "xwoba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.472
+        "value": 0.468
       },
       "coldest": {
         "player": "TJ Friedl",
@@ -27,46 +27,46 @@
     "xba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.334
+        "value": 0.331
       },
       "coldest": {
         "player": "Rhys Hoskins",
-        "value": 0.165
+        "value": 0.169
       },
       "average": 0.25
     },
     "xslg": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.708
+        "value": 0.7
       },
       "coldest": {
         "player": "TJ Friedl",
-        "value": 0.26
+        "value": 0.258
       },
       "average": 0.413
     },
     "barrel": {
       "leader": {
         "player": "James Wood",
-        "value": 22.9
+        "value": 22.8
       },
       "coldest": {
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.648
+      "average": 8.586
     },
     "hardhit": {
       "leader": {
         "player": "James Wood",
-        "value": 60.2
+        "value": 59.9
       },
       "coldest": {
         "player": "Steven Kwan",
         "value": 9.8
       },
-      "average": 40.528
+      "average": 40.424
     },
     "avgev": {
       "leader": {
@@ -75,9 +75,9 @@
       },
       "coldest": {
         "player": "Steven Kwan",
-        "value": 83.1
+        "value": 83.2
       },
-      "average": 89.206
+      "average": 89.174
     },
     "maxev": {
       "leader": {
@@ -88,16 +88,16 @@
         "player": "Chandler Simpson",
         "value": 100.8
       },
-      "average": 110.658
+      "average": 110.639
     },
     "sweetspot": {
       "leader": {
         "player": "Spencer Torkelson",
-        "value": 47.6
+        "value": 47.9
       },
       "coldest": {
         "player": "Nick Fortes",
-        "value": 21.3
+        "value": 21.0
       },
       "average": 34.143
     },
@@ -108,9 +108,9 @@
       },
       "coldest": {
         "player": "Chandler Simpson",
-        "value": 105.0
+        "value": 106.0
       },
-      "average": 168.31
+      "average": 168.142
     }
   },
   "pitching": {
@@ -123,12 +123,12 @@
         "player": "Tanner Gordon",
         "value": 0.413
       },
-      "average": 0.312
+      "average": 0.311
     },
     "xwoba": {
       "leader": {
-        "player": "Louis Varland",
-        "value": 0.217
+        "player": "Dylan Lee",
+        "value": 0.214
       },
       "coldest": {
         "player": "Merrill Kelly",
@@ -161,24 +161,24 @@
     "barrel": {
       "leader": {
         "player": "Tyler Rogers",
-        "value": 0.7
+        "value": 1.4
       },
       "coldest": {
         "player": "Cole Ragans",
         "value": 15.7
       },
-      "average": 7.691
+      "average": 7.667
     },
     "hardhit": {
       "leader": {
         "player": "Fernando Cruz",
-        "value": 21.6
+        "value": 21.1
       },
       "coldest": {
         "player": "Chase Dollander",
         "value": 52.1
       },
-      "average": 38.384
+      "average": 38.368
     },
     "avgev": {
       "leader": {
@@ -189,7 +189,7 @@
         "player": "Gus Varland",
         "value": 93.9
       },
-      "average": 88.69
+      "average": 88.685
     },
     "maxev": {
       "leader": {
@@ -200,7 +200,7 @@
         "player": "Foster Griffin",
         "value": 119.0
       },
-      "average": 112.069
+      "average": 112.101
     },
     "sweetspot": {
       "leader": {
@@ -211,18 +211,18 @@
         "player": "Austin Warren",
         "value": 47.5
       },
-      "average": 33.313
+      "average": 33.302
     },
     "avgdist": {
       "leader": {
         "player": "Tyler Rogers",
-        "value": 96.0
+        "value": 100.0
       },
       "coldest": {
         "player": "Paul Sewald",
         "value": 225.0
       },
-      "average": 164.548
+      "average": 164.431
     }
   }
 }
