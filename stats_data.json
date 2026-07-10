@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-07-09",
+  "updated": "2026-07-10",
   "hitting": {
     "woba": {
       "leader": {
@@ -9,9 +9,9 @@
       },
       "coldest": {
         "player": "Austin Wells",
-        "value": 0.216
+        "value": 0.224
       },
-      "average": 0.326
+      "average": 0.325
     },
     "xwoba": {
       "leader": {
@@ -20,7 +20,7 @@
       },
       "coldest": {
         "player": "TJ Friedl",
-        "value": 0.243
+        "value": 0.242
       },
       "average": 0.325
     },
@@ -42,9 +42,9 @@
       },
       "coldest": {
         "player": "TJ Friedl",
-        "value": 0.258
+        "value": 0.256
       },
-      "average": 0.413
+      "average": 0.412
     },
     "barrel": {
       "leader": {
@@ -55,7 +55,7 @@
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.586
+      "average": 8.617
     },
     "hardhit": {
       "leader": {
@@ -64,9 +64,9 @@
       },
       "coldest": {
         "player": "Steven Kwan",
-        "value": 9.8
+        "value": 10.1
       },
-      "average": 40.424
+      "average": 40.443
     },
     "avgev": {
       "leader": {
@@ -77,7 +77,7 @@
         "player": "Steven Kwan",
         "value": 83.2
       },
-      "average": 89.174
+      "average": 89.177
     },
     "maxev": {
       "leader": {
@@ -85,21 +85,21 @@
         "value": 119.0
       },
       "coldest": {
-        "player": "Chandler Simpson",
-        "value": 100.8
+        "player": "Steven Kwan",
+        "value": 101.1
       },
-      "average": 110.639
+      "average": 110.655
     },
     "sweetspot": {
       "leader": {
-        "player": "Spencer Torkelson",
-        "value": 47.9
+        "player": "Owen Caissie",
+        "value": 47.3
       },
       "coldest": {
         "player": "Nick Fortes",
-        "value": 21.0
+        "value": 21.2
       },
-      "average": 34.143
+      "average": 34.174
     },
     "avgdist": {
       "leader": {
@@ -110,14 +110,14 @@
         "player": "Chandler Simpson",
         "value": 106.0
       },
-      "average": 168.142
+      "average": 168.28
     }
   },
   "pitching": {
     "woba": {
       "leader": {
         "player": "Jacob Latz",
-        "value": 0.175
+        "value": 0.18
       },
       "coldest": {
         "player": "Tanner Gordon",
@@ -132,20 +132,20 @@
       },
       "coldest": {
         "player": "Merrill Kelly",
-        "value": 0.412
+        "value": 0.405
       },
       "average": 0.314
     },
     "xba": {
       "leader": {
         "player": "Ryan Zeferjahn",
-        "value": 0.163
+        "value": 0.161
       },
       "coldest": {
         "player": "Zac Gallen",
-        "value": 0.313
+        "value": 0.312
       },
-      "average": 0.243
+      "average": 0.242
     },
     "xslg": {
       "leader": {
@@ -154,7 +154,7 @@
       },
       "coldest": {
         "player": "Merrill Kelly",
-        "value": 0.594
+        "value": 0.578
       },
       "average": 0.394
     },
@@ -167,7 +167,7 @@
         "player": "Cole Ragans",
         "value": 15.7
       },
-      "average": 7.667
+      "average": 7.701
     },
     "hardhit": {
       "leader": {
@@ -178,7 +178,7 @@
         "player": "Chase Dollander",
         "value": 52.1
       },
-      "average": 38.368
+      "average": 38.432
     },
     "avgev": {
       "leader": {
@@ -189,7 +189,7 @@
         "player": "Gus Varland",
         "value": 93.9
       },
-      "average": 88.685
+      "average": 88.693
     },
     "maxev": {
       "leader": {
@@ -200,18 +200,18 @@
         "player": "Foster Griffin",
         "value": 119.0
       },
-      "average": 112.101
+      "average": 112.108
     },
     "sweetspot": {
       "leader": {
         "player": "Bradgley Rodriguez",
-        "value": 19.3
+        "value": 18.9
       },
       "coldest": {
         "player": "Austin Warren",
         "value": 47.5
       },
-      "average": 33.302
+      "average": 33.367
     },
     "avgdist": {
       "leader": {
@@ -222,7 +222,7 @@
         "player": "Paul Sewald",
         "value": 225.0
       },
-      "average": 164.431
+      "average": 164.568
     }
   }
 }
