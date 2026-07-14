@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-07-13",
+  "updated": "2026-07-14",
   "hitting": {
     "woba": {
       "leader": {
@@ -66,7 +66,7 @@
         "player": "Steven Kwan",
         "value": 9.7
       },
-      "average": 40.469
+      "average": 40.471
     },
     "avgev": {
       "leader": {
@@ -77,7 +77,7 @@
         "player": "Steven Kwan",
         "value": 83.1
       },
-      "average": 89.186
+      "average": 89.187
     },
     "maxev": {
       "leader": {
@@ -110,7 +110,7 @@
         "player": "Chandler Simpson",
         "value": 105.0
       },
-      "average": 167.863
+      "average": 167.867
     }
   },
   "pitching": {
@@ -178,7 +178,7 @@
         "player": "Chase Dollander",
         "value": 52.1
       },
-      "average": 38.431
+      "average": 38.433
     },
     "avgev": {
       "leader": {
