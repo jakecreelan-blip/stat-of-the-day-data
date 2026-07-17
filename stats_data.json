@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-07-16",
+  "updated": "2026-07-17",
   "hitting": {
     "woba": {
       "leader": {
@@ -55,7 +55,7 @@
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.574
+      "average": 8.573
     },
     "hardhit": {
       "leader": {
@@ -66,7 +66,7 @@
         "player": "Steven Kwan",
         "value": 9.7
       },
-      "average": 40.471
+      "average": 40.468
     },
     "avgev": {
       "leader": {
@@ -77,7 +77,7 @@
         "player": "Steven Kwan",
         "value": 83.1
       },
-      "average": 89.187
+      "average": 89.186
     },
     "maxev": {
       "leader": {
@@ -99,7 +99,7 @@
         "player": "Nick Fortes",
         "value": 21.4
       },
-      "average": 34.077
+      "average": 34.07
     },
     "avgdist": {
       "leader": {
@@ -110,7 +110,7 @@
         "player": "Chandler Simpson",
         "value": 105.0
       },
-      "average": 167.867
+      "average": 167.848
     }
   },
   "pitching": {
@@ -143,7 +143,7 @@
       },
       "coldest": {
         "player": "Zac Gallen",
-        "value": 0.312
+        "value": 0.313
       },
       "average": 0.241
     },
@@ -178,7 +178,7 @@
         "player": "Chase Dollander",
         "value": 52.1
       },
-      "average": 38.433
+      "average": 38.434
     },
     "avgev": {
       "leader": {
@@ -211,7 +211,7 @@
         "player": "Austin Warren",
         "value": 47.5
       },
-      "average": 33.39
+      "average": 33.381
     },
     "avgdist": {
       "leader": {
@@ -222,7 +222,7 @@
         "player": "Paul Sewald",
         "value": 225.0
       },
-      "average": 164.677
+      "average": 164.66
     }
   }
 }
