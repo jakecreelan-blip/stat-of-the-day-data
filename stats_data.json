@@ -1,22 +1,22 @@
 {
   "season": 2026,
-  "updated": "2026-07-29",
+  "updated": "2026-07-30",
   "hitting": {
     "woba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.448
+        "value": 0.445
       },
       "coldest": {
         "player": "TJ Friedl",
         "value": 0.235
       },
-      "average": 0.325
+      "average": 0.324
     },
     "xwoba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.477
+        "value": 0.475
       },
       "coldest": {
         "player": "TJ Friedl",
@@ -27,7 +27,7 @@
     "xba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.338
+        "value": 0.336
       },
       "coldest": {
         "player": "Rhys Hoskins",
@@ -38,35 +38,35 @@
     "xslg": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.718
+        "value": 0.714
       },
       "coldest": {
         "player": "TJ Friedl",
         "value": 0.242
       },
-      "average": 0.41
+      "average": 0.409
     },
     "barrel": {
       "leader": {
-        "player": "James Wood",
-        "value": 21.8
+        "player": "Aaron Judge",
+        "value": 21.7
       },
       "coldest": {
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.459
+      "average": 8.421
     },
     "hardhit": {
       "leader": {
         "player": "Munetaka Murakami",
-        "value": 59.6
+        "value": 60.1
       },
       "coldest": {
         "player": "Steven Kwan",
-        "value": 9.6
+        "value": 9.4
       },
-      "average": 40.351
+      "average": 40.284
     },
     "avgev": {
       "leader": {
@@ -74,10 +74,10 @@
         "value": 96.0
       },
       "coldest": {
-        "player": "Steven Kwan",
-        "value": 83.4
+        "player": "Jorbit Vivas",
+        "value": 83.2
       },
-      "average": 89.171
+      "average": 89.146
     },
     "maxev": {
       "leader": {
@@ -88,7 +88,7 @@
         "player": "Steven Kwan",
         "value": 102.1
       },
-      "average": 110.774
+      "average": 110.78
     },
     "sweetspot": {
       "leader": {
@@ -97,9 +97,9 @@
       },
       "coldest": {
         "player": "Nick Fortes",
-        "value": 24.0
+        "value": 23.7
       },
-      "average": 34.027
+      "average": 33.996
     },
     "avgdist": {
       "leader": {
@@ -110,36 +110,36 @@
         "player": "Chandler Simpson",
         "value": 106.0
       },
-      "average": 167.892
+      "average": 167.806
     }
   },
   "pitching": {
     "woba": {
       "leader": {
         "player": "Mason Miller",
-        "value": 0.176
+        "value": 0.173
       },
       "coldest": {
         "player": "Justin Lawrence",
         "value": 0.413
       },
-      "average": 0.309
+      "average": 0.308
     },
     "xwoba": {
       "leader": {
         "player": "Mason Miller",
-        "value": 0.177
+        "value": 0.176
       },
       "coldest": {
         "player": "Grayson Rodriguez",
-        "value": 0.411
+        "value": 0.414
       },
-      "average": 0.311
+      "average": 0.31
     },
     "xba": {
       "leader": {
         "player": "Mason Miller",
-        "value": 0.125
+        "value": 0.124
       },
       "coldest": {
         "player": "Grayson Rodriguez",
@@ -150,46 +150,46 @@
     "xslg": {
       "leader": {
         "player": "Mason Miller",
-        "value": 0.165
+        "value": 0.166
       },
       "coldest": {
         "player": "Gus Varland",
-        "value": 0.576
+        "value": 0.579
       },
-      "average": 0.39
+      "average": 0.389
     },
     "barrel": {
       "leader": {
-        "player": "Tyler Rogers",
+        "player": "Jordan Hicks",
         "value": 1.3
       },
       "coldest": {
-        "player": "Gus Varland",
+        "player": "Paul Sewald",
         "value": 16.0
       },
-      "average": 7.662
+      "average": 7.644
     },
     "hardhit": {
       "leader": {
         "player": "Fernando Cruz",
-        "value": 21.9
+        "value": 21.3
       },
       "coldest": {
         "player": "Grayson Rodriguez",
-        "value": 54.1
+        "value": 52.4
       },
-      "average": 38.434
+      "average": 38.424
     },
     "avgev": {
       "leader": {
-        "player": "Edgardo Henriquez",
-        "value": 82.8
+        "player": "Ryan Yarbrough",
+        "value": 82.7
       },
       "coldest": {
         "player": "Gus Varland",
         "value": 93.8
       },
-      "average": 88.702
+      "average": 88.707
     },
     "maxev": {
       "leader": {
@@ -200,29 +200,29 @@
         "player": "Foster Griffin",
         "value": 119.0
       },
-      "average": 112.184
+      "average": 112.175
     },
     "sweetspot": {
       "leader": {
         "player": "Bradgley Rodriguez",
-        "value": 21.7
+        "value": 22.1
       },
       "coldest": {
         "player": "Austin Warren",
         "value": 47.5
       },
-      "average": 33.402
+      "average": 33.373
     },
     "avgdist": {
       "leader": {
         "player": "Tyler Rogers",
-        "value": 99.0
+        "value": 100.0
       },
       "coldest": {
         "player": "Paul Sewald",
         "value": 235.0
       },
-      "average": 164.578
+      "average": 164.449
     }
   }
 }
