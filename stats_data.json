@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-08-13",
+  "updated": "2026-08-14",
   "hitting": {
     "woba": {
       "leader": {
@@ -55,7 +55,7 @@
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.4
+      "average": 8.388
     },
     "hardhit": {
       "leader": {
@@ -64,9 +64,9 @@
       },
       "coldest": {
         "player": "Steven Kwan",
-        "value": 9.0
+        "value": 8.9
       },
-      "average": 40.184
+      "average": 40.192
     },
     "avgev": {
       "leader": {
@@ -74,10 +74,10 @@
         "value": 96.0
       },
       "coldest": {
-        "player": "Steven Kwan",
+        "player": "Jos\u00e9 Caballero",
         "value": 83.7
       },
-      "average": 89.164
+      "average": 89.163
     },
     "maxev": {
       "leader": {
@@ -93,13 +93,13 @@
     "sweetspot": {
       "leader": {
         "player": "Owen Caissie",
-        "value": 46.9
+        "value": 46.6
       },
       "coldest": {
         "player": "Nick Fortes",
         "value": 24.2
       },
-      "average": 34.129
+      "average": 34.116
     },
     "avgdist": {
       "leader": {
@@ -110,7 +110,7 @@
         "player": "Chandler Simpson",
         "value": 111.0
       },
-      "average": 168.518
+      "average": 168.526
     }
   },
   "pitching": {
@@ -123,7 +123,7 @@
         "player": "Justin Lawrence",
         "value": 0.413
       },
-      "average": 0.309
+      "average": 0.308
     },
     "xwoba": {
       "leader": {
@@ -167,29 +167,29 @@
         "player": "Elvis Alvarado",
         "value": 18.4
       },
-      "average": 7.601
+      "average": 7.586
     },
     "hardhit": {
       "leader": {
         "player": "Ryan Yarbrough",
-        "value": 22.5
+        "value": 22.9
       },
       "coldest": {
         "player": "Chase Dollander",
         "value": 52.1
       },
-      "average": 38.285
+      "average": 38.279
     },
     "avgev": {
       "leader": {
         "player": "Edgardo Henriquez",
-        "value": 82.9
+        "value": 83.0
       },
       "coldest": {
         "player": "Gordon Graceffo",
         "value": 92.0
       },
-      "average": 88.651
+      "average": 88.639
     },
     "maxev": {
       "leader": {
@@ -200,7 +200,7 @@
         "player": "Foster Griffin",
         "value": 119.0
       },
-      "average": 112.393
+      "average": 112.412
     },
     "sweetspot": {
       "leader": {
@@ -211,7 +211,7 @@
         "player": "Austin Warren",
         "value": 47.5
       },
-      "average": 33.215
+      "average": 33.186
     },
     "avgdist": {
       "leader": {
@@ -222,7 +222,7 @@
         "player": "Paul Sewald",
         "value": 234.0
       },
-      "average": 164.27
+      "average": 164.132
     }
   }
 }
