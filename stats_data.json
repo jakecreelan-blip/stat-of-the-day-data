@@ -1,22 +1,22 @@
 {
   "season": 2026,
-  "updated": "2026-08-16",
+  "updated": "2026-08-17",
   "hitting": {
     "woba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.439
+        "value": 0.437
       },
       "coldest": {
-        "player": "Cal Raleigh",
-        "value": 0.256
+        "player": "Matt Vierling",
+        "value": 0.258
       },
       "average": 0.325
     },
     "xwoba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.463
+        "value": 0.461
       },
       "coldest": {
         "player": "Taylor Walls",
@@ -31,14 +31,14 @@
       },
       "coldest": {
         "player": "Rhys Hoskins",
-        "value": 0.175
+        "value": 0.173
       },
       "average": 0.249
     },
     "xslg": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.684
+        "value": 0.681
       },
       "coldest": {
         "player": "Taylor Walls",
@@ -55,18 +55,18 @@
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.39
+      "average": 8.365
     },
     "hardhit": {
       "leader": {
         "player": "Munetaka Murakami",
-        "value": 59.5
+        "value": 60.1
       },
       "coldest": {
         "player": "Steven Kwan",
-        "value": 8.8
+        "value": 8.9
       },
-      "average": 40.225
+      "average": 40.1
     },
     "avgev": {
       "leader": {
@@ -74,10 +74,10 @@
         "value": 96.0
       },
       "coldest": {
-        "player": "Steven Kwan",
-        "value": 83.6
+        "player": "Jorbit Vivas",
+        "value": 82.5
       },
-      "average": 89.173
+      "average": 89.128
     },
     "maxev": {
       "leader": {
@@ -88,7 +88,7 @@
         "player": "Steven Kwan",
         "value": 102.1
       },
-      "average": 110.854
+      "average": 110.847
     },
     "sweetspot": {
       "leader": {
@@ -97,20 +97,20 @@
       },
       "coldest": {
         "player": "Nick Fortes",
-        "value": 24.0
+        "value": 24.6
       },
       "average": 34.136
     },
     "avgdist": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 215.0
+        "value": 216.0
       },
       "coldest": {
         "player": "Chandler Simpson",
         "value": 111.0
       },
-      "average": 168.573
+      "average": 168.476
     }
   },
   "pitching": {
@@ -123,7 +123,7 @@
         "player": "Justin Lawrence",
         "value": 0.413
       },
-      "average": 0.308
+      "average": 0.309
     },
     "xwoba": {
       "leader": {
@@ -160,14 +160,14 @@
     },
     "barrel": {
       "leader": {
-        "player": "Tyler Rogers",
+        "player": "Jordan Hicks",
         "value": 1.1
       },
       "coldest": {
         "player": "Elvis Alvarado",
-        "value": 18.2
+        "value": 17.8
       },
-      "average": 7.572
+      "average": 7.559
     },
     "hardhit": {
       "leader": {
@@ -178,18 +178,18 @@
         "player": "Chase Dollander",
         "value": 52.1
       },
-      "average": 38.213
+      "average": 38.147
     },
     "avgev": {
       "leader": {
         "player": "Edgardo Henriquez",
-        "value": 83.0
+        "value": 83.1
       },
       "coldest": {
-        "player": "Gordon Graceffo",
-        "value": 92.0
+        "player": "Pete Fairbanks",
+        "value": 91.9
       },
-      "average": 88.626
+      "average": 88.603
     },
     "maxev": {
       "leader": {
@@ -200,18 +200,18 @@
         "player": "Foster Griffin",
         "value": 119.0
       },
-      "average": 112.433
+      "average": 112.405
     },
     "sweetspot": {
       "leader": {
-        "player": "Tyler Rogers",
+        "player": "Tim Hill",
         "value": 23.1
       },
       "coldest": {
         "player": "Austin Warren",
         "value": 47.5
       },
-      "average": 33.188
+      "average": 33.236
     },
     "avgdist": {
       "leader": {
@@ -220,9 +220,9 @@
       },
       "coldest": {
         "player": "Paul Sewald",
-        "value": 234.0
+        "value": 233.0
       },
-      "average": 163.974
+      "average": 163.975
     }
   }
 }
