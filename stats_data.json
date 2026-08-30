@@ -1,22 +1,22 @@
 {
   "season": 2026,
-  "updated": "2026-08-29",
+  "updated": "2026-08-30",
   "hitting": {
     "woba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.433
+        "value": 0.435
       },
       "coldest": {
         "player": "Nasim Nu\u00f1ez",
-        "value": 0.256
+        "value": 0.254
       },
       "average": 0.325
     },
     "xwoba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.455
+        "value": 0.457
       },
       "coldest": {
         "player": "Taylor Walls",
@@ -27,7 +27,7 @@
     "xba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.327
+        "value": 0.329
       },
       "coldest": {
         "player": "Rhys Hoskins",
@@ -38,11 +38,11 @@
     "xslg": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.663
+        "value": 0.668
       },
       "coldest": {
         "player": "Taylor Walls",
-        "value": 0.255
+        "value": 0.256
       },
       "average": 0.407
     },
@@ -55,29 +55,29 @@
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.224
+      "average": 8.209
     },
     "hardhit": {
       "leader": {
-        "player": "Oneil Cruz",
-        "value": 58.3
+        "player": "Munetaka Murakami",
+        "value": 57.8
       },
       "coldest": {
         "player": "Steven Kwan",
         "value": 9.6
       },
-      "average": 39.878
+      "average": 39.845
     },
     "avgev": {
       "leader": {
         "player": "Oneil Cruz",
-        "value": 95.9
+        "value": 95.6
       },
       "coldest": {
         "player": "Jorbit Vivas",
-        "value": 82.5
+        "value": 82.6
       },
-      "average": 89.081
+      "average": 89.076
     },
     "maxev": {
       "leader": {
@@ -88,29 +88,29 @@
         "player": "Steven Kwan",
         "value": 102.1
       },
-      "average": 110.92
+      "average": 110.921
     },
     "sweetspot": {
       "leader": {
         "player": "Owen Caissie",
-        "value": 45.1
+        "value": 44.8
       },
       "coldest": {
         "player": "Cedric Mullins",
         "value": 24.8
       },
-      "average": 34.101
+      "average": 34.102
     },
     "avgdist": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 215.0
+        "value": 216.0
       },
       "coldest": {
         "player": "Chandler Simpson",
         "value": 108.0
       },
-      "average": 168.401
+      "average": 168.405
     }
   },
   "pitching": {
@@ -131,8 +131,8 @@
         "value": 0.188
       },
       "coldest": {
-        "player": "Merrill Kelly",
-        "value": 0.398
+        "player": "Tomoyuki Sugano",
+        "value": 0.393
       },
       "average": 0.309
     },
@@ -164,43 +164,43 @@
         "value": 1.5
       },
       "coldest": {
-        "player": "Elvis Alvarado",
-        "value": 15.5
+        "player": "Paul Sewald",
+        "value": 15.3
       },
-      "average": 7.475
+      "average": 7.46
     },
     "hardhit": {
       "leader": {
         "player": "Ryan Yarbrough",
-        "value": 24.5
+        "value": 25.3
       },
       "coldest": {
         "player": "Chase Dollander",
         "value": 52.1
       },
-      "average": 38.105
+      "average": 38.08
     },
     "avgev": {
       "leader": {
         "player": "Ryan Yarbrough",
-        "value": 83.4
+        "value": 83.7
       },
       "coldest": {
         "player": "Cade Smith",
         "value": 91.9
       },
-      "average": 88.585
+      "average": 88.56
     },
     "maxev": {
       "leader": {
-        "player": "Bradgley Rodriguez",
-        "value": 105.7
+        "player": "Chase Silseth",
+        "value": 107.2
       },
       "coldest": {
         "player": "Foster Griffin",
         "value": 119.0
       },
-      "average": 112.519
+      "average": 112.54
     },
     "sweetspot": {
       "leader": {
@@ -211,7 +211,7 @@
         "player": "Austin Warren",
         "value": 48.1
       },
-      "average": 33.251
+      "average": 33.253
     },
     "avgdist": {
       "leader": {
@@ -222,7 +222,7 @@
         "player": "Paul Sewald",
         "value": 233.0
       },
-      "average": 163.814
+      "average": 163.811
     }
   }
 }
