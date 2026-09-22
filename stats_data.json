@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "hitting": {
     "woba": {
       "leader": {
@@ -9,7 +9,7 @@
       },
       "coldest": {
         "player": "Nasim Nu\u00f1ez",
-        "value": 0.25
+        "value": 0.249
       },
       "average": 0.325
     },
@@ -33,7 +33,7 @@
         "player": "Taylor Walls",
         "value": 0.189
       },
-      "average": 0.249
+      "average": 0.248
     },
     "xslg": {
       "leader": {
@@ -55,23 +55,23 @@
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.197
+      "average": 8.199
     },
     "hardhit": {
       "leader": {
         "player": "James Wood",
-        "value": 58.6
+        "value": 58.7
       },
       "coldest": {
         "player": "Steven Kwan",
         "value": 10.3
       },
-      "average": 39.805
+      "average": 39.803
     },
     "avgev": {
       "leader": {
         "player": "James Wood",
-        "value": 95.2
+        "value": 95.3
       },
       "coldest": {
         "player": "Jorbit Vivas",
@@ -99,7 +99,7 @@
         "player": "Cedric Mullins",
         "value": 24.3
       },
-      "average": 34.051
+      "average": 34.049
     },
     "avgdist": {
       "leader": {
@@ -110,7 +110,7 @@
         "player": "Chandler Simpson",
         "value": 108.0
       },
-      "average": 168.282
+      "average": 168.29
     }
   },
   "pitching": {
@@ -178,7 +178,7 @@
         "player": "Camilo Doval",
         "value": 47.9
       },
-      "average": 38.104
+      "average": 38.101
     },
     "avgev": {
       "leader": {
@@ -208,21 +208,21 @@
         "value": 22.6
       },
       "coldest": {
-        "player": "Kodai Senga",
+        "player": "Austin Warren",
         "value": 43.8
       },
-      "average": 33.348
+      "average": 33.349
     },
     "avgdist": {
       "leader": {
         "player": "Tyler Rogers",
-        "value": 99.0
+        "value": 102.0
       },
       "coldest": {
         "player": "Paul Sewald",
         "value": 226.0
       },
-      "average": 164.182
+      "average": 164.196
     }
   }
 }
