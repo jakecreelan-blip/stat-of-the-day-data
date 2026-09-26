@@ -1,11 +1,11 @@
 {
   "season": 2026,
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "hitting": {
     "woba": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.429
+        "value": 0.428
       },
       "coldest": {
         "player": "Nasim Nu\u00f1ez",
@@ -33,12 +33,12 @@
         "player": "Cal Raleigh",
         "value": 0.19
       },
-      "average": 0.248
+      "average": 0.249
     },
     "xslg": {
       "leader": {
         "player": "Yordan Alvarez",
-        "value": 0.64
+        "value": 0.638
       },
       "coldest": {
         "player": "Taylor Walls",
@@ -49,35 +49,35 @@
     "barrel": {
       "leader": {
         "player": "Munetaka Murakami",
-        "value": 19.2
+        "value": 20.2
       },
       "coldest": {
         "player": "Chandler Simpson",
         "value": 0.0
       },
-      "average": 8.161
+      "average": 8.183
     },
     "hardhit": {
       "leader": {
         "player": "James Wood",
-        "value": 58.6
+        "value": 58.7
       },
       "coldest": {
         "player": "Steven Kwan",
-        "value": 10.5
+        "value": 10.4
       },
-      "average": 39.75
+      "average": 39.783
     },
     "avgev": {
       "leader": {
         "player": "James Wood",
-        "value": 95.2
+        "value": 95.3
       },
       "coldest": {
         "player": "Jorbit Vivas",
-        "value": 83.0
+        "value": 82.9
       },
-      "average": 89.053
+      "average": 89.059
     },
     "maxev": {
       "leader": {
@@ -88,18 +88,18 @@
         "player": "Steven Kwan",
         "value": 102.2
       },
-      "average": 111.033
+      "average": 111.037
     },
     "sweetspot": {
       "leader": {
         "player": "Brandon Marsh",
-        "value": 41.3
+        "value": 41.1
       },
       "coldest": {
         "player": "Cedric Mullins",
-        "value": 24.1
+        "value": 24.0
       },
-      "average": 34.038
+      "average": 34.04
     },
     "avgdist": {
       "leader": {
@@ -110,7 +110,7 @@
         "player": "Chandler Simpson",
         "value": 108.0
       },
-      "average": 168.157
+      "average": 168.166
     }
   },
   "pitching": {
@@ -132,7 +132,7 @@
       },
       "coldest": {
         "player": "Zac Gallen",
-        "value": 0.385
+        "value": 0.384
       },
       "average": 0.309
     },
@@ -143,9 +143,9 @@
       },
       "coldest": {
         "player": "Zac Gallen",
-        "value": 0.313
+        "value": 0.311
       },
-      "average": 0.239
+      "average": 0.238
     },
     "xslg": {
       "leader": {
@@ -153,8 +153,8 @@
         "value": 0.196
       },
       "coldest": {
-        "player": "Tomoyuki Sugano",
-        "value": 0.541
+        "player": "Zack Littell",
+        "value": 0.539
       },
       "average": 0.385
     },
@@ -167,29 +167,29 @@
         "player": "Jameson Taillon",
         "value": 14.6
       },
-      "average": 7.471
+      "average": 7.468
     },
     "hardhit": {
       "leader": {
         "player": "Ryan Yarbrough",
-        "value": 25.3
+        "value": 25.0
       },
       "coldest": {
         "player": "Camilo Doval",
         "value": 47.9
       },
-      "average": 38.053
+      "average": 38.076
     },
     "avgev": {
       "leader": {
         "player": "Ryan Yarbrough",
-        "value": 83.8
+        "value": 83.7
       },
       "coldest": {
         "player": "Zack Littell",
         "value": 91.7
       },
-      "average": 88.562
+      "average": 88.571
     },
     "maxev": {
       "leader": {
@@ -200,7 +200,7 @@
         "player": "Foster Griffin",
         "value": 119.0
       },
-      "average": 112.815
+      "average": 112.81
     },
     "sweetspot": {
       "leader": {
@@ -211,18 +211,18 @@
         "player": "Kodai Senga",
         "value": 43.6
       },
-      "average": 33.367
+      "average": 33.365
     },
     "avgdist": {
       "leader": {
-        "player": "Tyler Rogers",
+        "player": "Tim Hill",
         "value": 102.0
       },
       "coldest": {
         "player": "Paul Sewald",
         "value": 225.0
       },
-      "average": 164.252
+      "average": 164.167
     }
   }
 }
