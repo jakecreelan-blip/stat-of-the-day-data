@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "hitting": {
     "woba": {
       "leader": {
@@ -66,7 +66,7 @@
         "player": "Steven Kwan",
         "value": 10.5
       },
-      "average": 39.852
+      "average": 39.854
     },
     "avgev": {
       "leader": {
@@ -110,7 +110,7 @@
         "player": "Chandler Simpson",
         "value": 108.0
       },
-      "average": 168.28
+      "average": 168.285
     }
   },
   "pitching": {
