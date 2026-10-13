@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "hitting": {
     "woba": {
       "leader": {
@@ -99,7 +99,7 @@
         "player": "Cedric Mullins",
         "value": 24.1
       },
-      "average": 34.059
+      "average": 34.06
     },
     "avgdist": {
       "leader": {
@@ -211,7 +211,7 @@
         "player": "Kodai Senga",
         "value": 43.6
       },
-      "average": 33.381
+      "average": 33.382
     },
     "avgdist": {
       "leader": {
@@ -222,7 +222,7 @@
         "player": "Paul Sewald",
         "value": 223.0
       },
-      "average": 164.192
+      "average": 164.195
     }
   }
 }
