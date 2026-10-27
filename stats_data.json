@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "hitting": {
     "woba": {
       "leader": {
@@ -66,7 +66,7 @@
         "player": "Steven Kwan",
         "value": 10.5
       },
-      "average": 39.854
+      "average": 39.855
     },
     "avgev": {
       "leader": {
@@ -178,7 +178,7 @@
         "player": "Camilo Doval",
         "value": 47.4
       },
-      "average": 38.072
+      "average": 38.073
     },
     "avgev": {
       "leader": {
