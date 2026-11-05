@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "hitting": {
     "woba": {
       "leader": {
@@ -131,7 +131,7 @@
         "value": 0.201
       },
       "coldest": {
-        "player": "Zack Littell",
+        "player": "Zac Gallen",
         "value": 0.384
       },
       "average": 0.309
